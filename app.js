@@ -91,3 +91,57 @@ const today = new Date();
 
 console.log(typeof today);
 
+
+const users = [
+    {id:1, name:'Anand'},
+    {id:2, name:'Shreya'},
+    {id:3, name:'karen'}
+];
+
+users.forEach(function (user, index) {
+    console.log(`user name is ${user.name} and he is at ${user.id}`);
+});
+
+const ids = users.map((user) => {return user.id;});
+
+console.log(ids);
+
+const user = {
+    firstName: 'Anand',
+    lastName: 'Shreya',
+    age: 30
+};
+
+for(let x in user){
+    console.log(user[x]);
+}
+
+
+// Scoping
+
+//  Global scope
+
+var a = 1;
+let b = 2;
+const c = 3;
+
+//  Function Scope
+function testScope(){
+    var a = 4;
+    let b = 5;
+    const c = 6;
+    console.log(`function  Scope ${a} ${b} ${c}`);
+}
+testScope();
+
+//  Block level scope - anything that is wrapped in curly braces if or loops 
+
+if (true) {
+    var a = 7;
+    let b = 8;
+    const c = 9;
+    console.log(`Block  Scope ${a} ${b} ${c}`);
+}
+
+console.log(`global Scope ${a} ${b} ${c}`);
+

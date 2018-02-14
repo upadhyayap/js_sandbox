@@ -3,6 +3,7 @@
 //  Template Literals part of ES6
 const job = 'Web developer';
 const city = 'miami';
+const age = 45;
 
 //  ES5 way
 let html = '<ul><li>Name: '+ name +'</li><li> Age: '+ 

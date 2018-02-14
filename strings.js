@@ -4,35 +4,35 @@ const firstName = 'william';
 const lastName = 'johnson';
 
 //  concatenation
-val = firstName + ' ' + lastName;
+let stringVal = firstName + ' ' + lastName;
 //  Appending
-val = 'Brad ';
-val += 'Travery';
+stringVal = 'Brad ';
+stringVal += 'Travery';
 
-val = 'Hello My name is ' + firstName + 'and I am ' + age;
+stringVal = 'Hello My name is ' + firstName + 'and I am ' + 45;
 
 //  template Literals and escaping
-val = 'Thats\'s awsome, I can\'t wait';
-val = firstName.length;
-val = firstName.concat(lastName);
-val = firstName.toLowerCase();
-val = firstName.toUpperCase();
+stringVal = 'Thats\'s awsome, I can\'t wait';
+stringVal = firstName.length;
+stringVal = firstName.concat(lastName);
+stringVal = firstName.toLowerCase();
+stringVal = firstName.toUpperCase();
 
 //  Strings can also be treated as a read only arrays
-val = firstName[0];
+stringVal = firstName[0];
 
-val = firstName.indexOf('w');
-val = firstName.lastIndexOf('l');
+stringVal = firstName.indexOf('w');
+stringVal = firstName.lastIndexOf('l');
 // -1 if char is not found
-val = firstName.charAt(0); 
+stringVal = firstName.charAt(0); 
 
-val = firstName.charAt(firstName.length -1);
-val = firstName.substring(0, 4);
-val = firstName.slice(0, 4);
-val = 'Hello there, my name is Brad'.split(' ');
-val = 'Hello there, my name is Brad'.replace('Brad', 'Anand');
-val = firstName.includes('lli');
-val = firstName.includes('foo');
+stringVal = firstName.charAt(firstName.length -1);
+stringVal = firstName.substring(0, 4);
+stringVal = firstName.slice(0, 4);
+stringVal = 'Hello there, my name is Brad'.split(' ');
+stringVal = 'Hello there, my name is Brad'.replace('Brad', 'Anand');
+stringVal = firstName.includes('lli');
+stringVal = firstName.includes('foo');
 
 console.log(firstName + lastName);
-console.log(val);
+console.log(stringVal);
